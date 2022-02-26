@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Vite App</title>
+  <style>
+    body {
+      overflow: hidden;
+      margin: 0;
+    }
+
+    #scoreboard {
+      position: absolute;
+      top: 10px;
+      width: 100%;
+      z-index: 100;
+      font-size: 40px;
+      color: white;
+      display: block;
+    }
+
+    #gameover {
+      z-index: 100;
+      color: white;
+      font-size: 120px;
+      position: fixed;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  </style>
+</head>
+
+<body>
+
+  <div id="scoreboard">
+    HEALTH: 3 &emsp; SCORE: 0 &emsp; TIME: 0 &emsp; TREASURES: 0 &emsp; SHIPS DESTROYED: 0
+  </div>
+  <div id="gameover"></div>
+  <div id="container"></div>
+
+  <script type="module" src="/ocean.js"></script>
+</body>
+
+</html>
